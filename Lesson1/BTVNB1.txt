@@ -1,0 +1,6 @@
+22/9/2022
+B1: Viết phương thức tính tích phân có 2 cận.
+B2: Tính thể tích hình nón và hình trụ.
+B3: Tính tổ hợp, chỉnh hợp.
+B4: Viết phương thức xử lý thuật toán fibonacci
+
