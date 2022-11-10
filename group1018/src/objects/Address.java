@@ -12,14 +12,10 @@ public class Address {
 	private String cityName;
 	private String districtName;
 	private String streetName;
-	
-	
-	
+		
 	public Address() {
 		this(Address.CITYNAME, Address.DISTRICTNAME, Address.STREETNAME);
 	}
-
-	
 
 	public Address(String cityName, String districtName, String streetName) {
 		super();
@@ -32,44 +28,34 @@ public class Address {
 		this(addr.getCityName(), addr.districtName, addr.streetName);
 	}
 
-
 	public String getCityName() {
 		return cityName;
 	}
-
 
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
 
-
 	public String getDistrictName() {
 		return districtName;
 	}
-
 
 	public void setDistrictName(String districtName) {
 		this.districtName = districtName;
 	}
 
-
 	public String getStreetName() {
 		return streetName;
 	}
 
-
 	public void setStreetName(String streetName) {
 		this.streetName = streetName;
 	}
-	
-	
-
 
 	@Override
 	public String toString() {
 		return "Address [cityName=" + cityName + ", districtName=" + districtName + ", streetName=" + streetName + "]";
 	}
-
 
 	public static void main(String[] args) {
 		
@@ -79,6 +65,5 @@ public class Address {
 		System.out.println(p);
 		
 	}
-	
 	
 }

@@ -1,6 +1,8 @@
 package util;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import objects.*;
 
@@ -41,8 +43,8 @@ public class MyArrays {
 				"Trang", "Yến", "Yến Anh" };
 
 //		Danh sách họ
-		String[] lastNames = { "Hoàng", "Nguyễn", "Lê", "Phan", "Phạm", "Vũ", "Đào", "Đoàn", "Linh", "Lương", "Ngô",
-				"Mạnh", "Ma", "Trần", "Vũ", "Bùi", "Quách", "Hồ", "An", "Lâm" };
+		String[] lastNames = { "Hoàng", "Nguyễn", "Lê", "Phan", "Phạm", "Vũ", "Đào", "Đoàn", "Lương", "Ngô",
+				"Ma", "Trần", "Vũ", "Bùi", "Quách", "Hồ"};
 
 //		Thực hiện sinh ngẫu nhiên danh sách
 		int index;
@@ -191,6 +193,52 @@ public class MyArrays {
 
 		return arrInt;
 	}
+	
+	public static ArrayList<Person> sortedByAge(Person[] list, boolean isINC) {
+		// Tạo tập hợp trung gian
+		ArrayList<Person> tmp = new ArrayList<>();
+		
+		// Sao chép mảng sang tập hợp
+		Collections.addAll(tmp, list);
+		
+		// Sắp xếp
+		if(isINC) {
+			Collections.sort(tmp);
+//			tmp.sort((p1, p2) -> p1.getAge() - p2.getAge());
+		}
+		else {
+			Collections.sort(tmp, Collections.reverseOrder());
+//			tmp.sort((p1, p2) -> p2.getAge() - p1.getAge());
+		}
+
+		
+		// Trả về kết quả
+		return tmp;
+		
+	}
+	
+	public static ArrayList<Person> sortedByName(Person[] list, boolean isINC) {
+		// Tạo tập hợp trung gian
+		ArrayList<Person> tmp = new ArrayList<>();
+		
+		// Sao chép mảng sang tập hợp
+		Collections.addAll(tmp, list);
+		
+		// Sắp xếp
+		if(isINC) {
+			Collections.sort(tmp, new sortByName());
+//			tmp.sort((p1, p2) -> p1.getFirstName().compareToIgnoreCase(p2.getFirstName()));
+		}
+		else {
+			Collections.sort(tmp, new sortByName().reversed());
+//			tmp.sort((p1, p2) -> p2.getFirstName().compareToIgnoreCase(p1.getFirstName()));
+		}
+
+		// Trả về kết quả
+		return tmp;
+		
+	}
+	
 
 	public static void printArray(int[] arrInt) {
 		for (int value : arrInt) {
@@ -240,13 +288,46 @@ public class MyArrays {
 		Person[] list = generatePerson(5);
 		printPerson(list);
 		
-		System.out.println("Tìm theo tên");
+		System.out.println("\nTìm theo tên");
 		Person[] results = searchByName(list, "Anh");
 		printPerson(results);
 
-		System.out.println("Tìm theo tên v2");
+		System.out.println("\nTìm theo tên v2");
 		ArrayList<Person> resultsV2 = searchByNameV2(list, "Anh");
 		printPerson(resultsV2);
 
+		System.out.println("\nSắp xếp theo tuổi");
+		ArrayList<Person> resultSortAge = sortedByAge(list, true);
+		printPerson(resultSortAge);
+		
+		System.out.println("\nSắp xếp theo tên");
+		ArrayList<Person> resultSortName = sortedByName(list, true);
+		printPerson(resultSortName);
+		
+
 	}
+	
+}
+
+class sortByName implements Comparator<Person> {
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		// TODO Auto-generated method stub
+		String name1 = o1.getFirstName();
+		String name2 = o2.getFirstName();
+		
+		// Biến xác nhận vị trí cần cắt tên sau cùng
+		byte at = (byte)name1.lastIndexOf(" ");
+		if(at != -1) {
+			name1 = name1.substring(at+1);
+		}
+		at = (byte)name2.lastIndexOf(" ");
+		if(at != -1) {
+			name2 = name2.substring(at+1);
+		}
+
+		return name1.compareToIgnoreCase(name2);
+	}
+	
 }

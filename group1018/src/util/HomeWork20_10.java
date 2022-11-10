@@ -11,6 +11,7 @@
 
 // Bài 4: So sánh độ giống nhau của 2 chuỗi ký tự
 
+
 package util;
 
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ public class HomeWork20_10 {
 		
 		str = str.trim().replaceAll("\\@+", "@");
 		String[] arr = str.split("\\@");
-
+		
 		Set<String> setStr = new HashSet<>();
 		for (String s : arr) {
 			setStr.add(s);
@@ -96,11 +97,11 @@ public class HomeWork20_10 {
 		
 		double samePercent = 0;
 		
-		if(str1.length() < str2.length()) {
-			String temp = str1;
-			str1 = str2;
-			str2 = temp;
-		}
+//		if(str1.length() < str2.length()) {
+//			String temp = str1;
+//			str1 = str2;
+//			str2 = temp;
+//		}
 		
 		int l2 = str2.length();
 		  
@@ -134,10 +135,10 @@ public class HomeWork20_10 {
 		System.out.println(Bai2(   "nguyễn    vĂN   thắngG"));
 		
 		// Bài 3
-		Bai3("NguyenVanThanVa", "nVa");
+		Bai3("NguyenVanThanVa", "nVa"); 	 	 
 		
 		// Bài 4
-		System.out.println(Bai4("Nguyen Van Thang", "Thang ne") + "%");
+		System.out.println(Bai4("How are you?", "I’m fine") + "%");
 
 	}
 

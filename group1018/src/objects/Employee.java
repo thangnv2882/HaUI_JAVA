@@ -44,7 +44,7 @@ public class Employee extends Person {
 
 	@Override
 	public String toString() {
-		return "Employee [" + super.toString() + " - net=" + net + ", position=" + position + "]";
+		return "Employee [" + super.toString() + " - net = " + net + ", position = " + position + "]";
 	}
 
 	public static void main(String[] args) {

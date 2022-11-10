@@ -99,18 +99,21 @@ public class MyStrings {
 		char ch;
 		for(int i = 0; i < str.length(); i++) {
 			ch = tmp.charAt(i);
-			if(ch != ' ') {
+			if(ch != ' ' && chs.indexOf(ch) == -1) {
 				chs += ch;
 				tmp.replace(ch, ' ');
 			}
 		}
+		System.out.println("chs: " + chs);
 		
 		ArrayList<String> fres = new ArrayList<>(chs.length());
+//		String[] fres = new String[chs.length()];
 		int count = 0;
 		for(int i = 0; i < chs.length(); i++) {
 			ch = chs.charAt(i);
 			count = MyStrings.countChar(str, ch, isIgnoreCase);
-			fres.add("[" + ch + " - " + count + "]");
+			System.out.println(ch + ": " + count);
+//			fres.add("[" + ch + " - " + count + "]");
 		}
 		return fres;
 	}
@@ -119,6 +122,7 @@ public class MyStrings {
 
 		// Chuẩn hoá
 		str = MyStrings.formatString(str);
+		
 		String[] arr = str.trim().split("\\s");
 		
 		String strNew = "";
@@ -138,15 +142,15 @@ public class MyStrings {
 		int i;
 		int count = 0;
 		for(i = 0; i < str.length(); i++) {
-//			if(str.charAt(i) == ' ') {
-//				count++;
-//			}
-//			if(count >= nWords) {
-//				break;
-//			}
-			if((str.charAt(i) == ' ') && (++count >= nWords)) {
+			if(str.charAt(i) == ' ') {
+				count++;
+			}
+			if(count >= nWords) {
 				break;
 			}
+//			if((str.charAt(i) == ' ') && (++count >= nWords)) {
+//				break;
+//			}
 		}
 		
 		if(i < str.length()-1) {
@@ -158,7 +162,7 @@ public class MyStrings {
 	}
 	
 	public static void main(String[] args) {
-		String str = "Hello Every 123 Good Afternooon";
+		String str = "Nguyen Van A";
 
 		System.out.println(MyStrings.getWords(str, (byte)3));
 
@@ -168,9 +172,9 @@ public class MyStrings {
 //		System.out.println("Chuỗi: " + str + " có " + countWords(str) + " từ.");
 //		frequencyChar(str, true);
 //		
-//		System.out.println(MyStrings.frequencyCharV2(str, false));
+		System.out.println(MyStrings.frequencyCharV2("Tinh ngu di em oi", true));
 //
-//		System.out.println(MyStrings.getWords(str, (byte)3));
+//		System.out.println(MyStrings.getWordsV2(str, (byte)5));
 	}
 
 }

@@ -1,6 +1,6 @@
 package objects;
 
-public class Person {
+public class Person implements Comparable<Person> {
 
 //	Constants
 	public static final String FIRSTNAME = "No firstName";
@@ -113,6 +113,12 @@ public class Person {
 //		
 //		System.out.println(s == s1);
 
+	}
+
+	@Override
+	public int compareTo(Person o) {
+		// TODO Auto-generated method stub
+		return this.age - o.getAge();
 	}
 
 }
