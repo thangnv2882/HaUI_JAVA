@@ -20,6 +20,15 @@ public class TV extends Product {
 	public void setResolution(String resolution) {
 		this.resolution = resolution;
 	}
+
+	@Override
+	public String toString() {
+		return "TV [resolution=" + resolution + ", name=" + name + ", branch=" + branch + ", price=" + price
+				+ ", yearOfManufacture=" + yearOfManufacture + "]";
+	}
+	
+	
+	
 	
 	
 

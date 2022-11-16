@@ -20,5 +20,13 @@ public class Smartphone extends Product {
 	public void setBatteryCapacities(int batteryCapacities) {
 		this.batteryCapacities = batteryCapacities;
 	}
+
+	@Override
+	public String toString() {
+		return "Smartphone [batteryCapacities=" + batteryCapacities + ", name=" + name + ", branch=" + branch
+				+ ", price=" + price + ", yearOfManufacture=" + yearOfManufacture + "]";
+	}
+	
+	
 	
 }

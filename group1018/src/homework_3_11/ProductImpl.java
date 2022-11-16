@@ -67,6 +67,22 @@ public class ProductImpl implements IProduct {
 		}
 		return results;
 	}
+
+	@Override
+	public List<Smartphone> sortByBatteryCapacities(List<Product> products, boolean isINC) {
+		List<Smartphone> smartphones = new ArrayList<>();
+		for(Product product : products) {
+			if(product instanceof Smartphone) {
+				smartphones.add((Smartphone)product);
+			}
+		}
+		if(isINC) {
+			smartphones.sort((s1, s2) -> (int)s1.getBatteryCapacities() - s2.getBatteryCapacities());
+		} else {
+			smartphones.sort((s1, s2) -> (int)s2.getBatteryCapacities() - s1.getBatteryCapacities());
+		}
+		return smartphones;
+	}
 }
 
 class sortByName implements Comparator<Product> {

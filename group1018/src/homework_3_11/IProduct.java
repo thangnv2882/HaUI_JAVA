@@ -18,6 +18,8 @@ public interface IProduct {
 	void sortByName(List<Product> products, boolean isINC);
 	
 	void sortByPrice(List<Product> products, boolean isINC);
+
+	List<Smartphone> sortByBatteryCapacities(List<Product> products, boolean isINC);
 	
 	Product searchByName(List<Product> products, String name);
 	
@@ -26,5 +28,6 @@ public interface IProduct {
 	List<Product> searchByYearOfManufacture(List<Product> products, int yearOfManufacture);
 	
 	List<Product> searchByPrice(List<Product> products, Double price);
+	
 
 }

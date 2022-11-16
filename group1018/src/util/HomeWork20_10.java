@@ -15,6 +15,7 @@
 package util;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -23,7 +24,7 @@ import java.util.Set;
 public class HomeWork20_10 {
 
 	public static void Bai1(String str) {
-		if(str.startsWith("@")) {
+		while(str.startsWith("@")) {
 			str = str.substring(1);
 		}
 		
@@ -31,10 +32,12 @@ public class HomeWork20_10 {
 		String[] arr = str.split("\\@");
 		
 		Set<String> setStr = new HashSet<>();
-		for (String s : arr) {
-			setStr.add(s);
-		}
+		Collections.addAll(setStr, arr);
 		
+//		for (String s : arr) {
+//			setStr.add(s);
+//		}
+//		
 		for(String set : setStr) {
 			int count = 0;
 			for(String s : arr) {
@@ -46,16 +49,15 @@ public class HomeWork20_10 {
 		}
 	}
 	
-	public static String Bai1V2(String str) {
-		if(str.startsWith("@")) {
+	public static HashMap<String, Integer> Bai1V2(String str) {
+		while(str.startsWith("@")) {
 			str = str.substring(1);
 		}
 		
 		str = str.trim().replaceAll("\\@+", "@");
-		System.out.println(str);
 		String[] arrStr = str.split("\\@");
 		
-		Map<String, Integer> map = new HashMap<>();
+		HashMap<String, Integer> map = new HashMap<>();
 		for(String s : arrStr) {
 			if(map.containsKey(s)) {
 				map.put(s, map.get(s) + 1);
@@ -64,7 +66,13 @@ public class HomeWork20_10 {
 				map.put(s, 1);
 			}
 		}
-		return map.toString();
+		return map;
+	}
+	
+	public static void printStatistic(HashMap<String, Integer> words) {
+		for(Map.Entry<String, Integer> e : words.entrySet()) {
+			System.out.println(e.getKey() + " : " + e.getValue());
+		}
 	}
 	
 	public static String Bai2(String str) {
@@ -127,18 +135,19 @@ public class HomeWork20_10 {
 	public static void main(String[] args) {
 
 		// Bài 1
-		String str = "@dbc@@@ghu@@abc@abc@@@ghu@omn@@min";
+		String str = "@@@dbc@@@ghu@@abc@abc@@@ghu@omn@@min";
 		Bai1(str);
-		System.out.println(Bai1V2(str));
+		System.out.println("------------------------");
+		printStatistic(Bai1V2(str));
 		
 		// Bài 2
-		System.out.println(Bai2(   "nguyễn    vĂN   thắngG"));
-		
-		// Bài 3
-		Bai3("NguyenVanThanVa", "nVa"); 	 	 
-		
-		// Bài 4
-		System.out.println(Bai4("How are you?", "I’m fine") + "%");
+//		System.out.println(Bai2(   "nguyễn    vĂN   thắngG"));
+//		
+//		// Bài 3
+//		Bai3("NguyenVanThanVa", "nVa"); 	 	 
+//		
+//		// Bài 4
+		System.out.println(Bai4("Bai nay hay khong", "heloay khong") + "%");
 
 	}
 

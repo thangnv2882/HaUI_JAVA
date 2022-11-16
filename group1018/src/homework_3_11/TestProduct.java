@@ -8,22 +8,27 @@ public class TestProduct {
 	public static void main(String[] args) {
 		Product p1 = new Motobike("SH 150i 2022", "SH", 100_000_000.0, 2021, "150cc");
 		Product p2 = new Smartphone("IPhone 14 pro max", "Iphone", 35_000_000.0, 2022, 4300);
-		Product p3 = new TV("Smart Tivi Samsung 4K Crystal", "Samsung ", 20_000_000.0, 2022, "4K");
+		Product p3 = new Smartphone("IPhone 14 pro ", "Iphone", 32_000_000.0, 2022, 4100);
+		Product p4 = new TV("Smart Tivi Samsung 4K Crystal", "Samsung ", 20_000_000.0, 2022, "4K");
 		
 		List<Product> products = new ArrayList<>();
 		products.add(p1);
 		products.add(p2);
 		products.add(p3);
+		products.add(p4);
 		
 		ProductImpl productImpl = new ProductImpl();
 		
 		System.out.println("Sort by name: ");
-		productImpl.sortByName(products, false);
+		productImpl.sortByName(products, true);
 		System.out.println(products);
 		
 		System.out.println("Sort by price: ");
-		productImpl.sortByPrice(products, false);
+		productImpl.sortByPrice(products, true);
 		System.out.println(products);
+		
+		System.out.println("Sort by battery capacities: ");
+		System.out.println(productImpl.sortByBatteryCapacities(products, true));
 		
 		System.out.println("Search product name: ");
 		System.out.println(productImpl.searchByName(products, "IPhone 14 pro max"));
