@@ -5,23 +5,31 @@ import java.util.Scanner;
 
 public class Interior extends Product {
 	
+//	Constants
+	public static final String COLOR = "No color";
+	public static final String SIZE = "No size";
+	public static final String MATERIAL = "No material";
+
+//	Object's properties
 	private String color;
 	private String size;
 	private String material;
 	
-	
+//	Construstor methods
 	public Interior() {
-		super();
+		this(Interior.PRODUCT_ID, Interior.PRODUCT_NAME, Interior.PRODUCT_PRICE, 
+				Interior.PRODUCT_TOTAL, Interior.COLOR, Interior.SIZE, Interior.MATERIAL);
 	}
 
-
-	public Interior(String product_id, String product_name, double product_price, int product_total, String color, String size, String material) {
+	public Interior(String product_id, String product_name, double product_price, 
+			int product_total, String color, String size, String material) {
 		super(product_id, product_name, product_price, product_total);
 		this.color = color;
 		this.size = size;
 		this.material = material;
 	}
-	
+
+//	Other methods
 	public void Input() {
 		super.Input();
 		Scanner sc = new Scanner(System.in);
@@ -35,7 +43,14 @@ public class Interior extends Product {
 	
 	public void Output() {
 		super.Output();
-        System.out.printf("%-15s %-10s %-15s", color, size, material);
+        System.out.printf("%-30s %-25s %-30s", color, size, material);
+	}
+	
+	public void OutputAInterior() {
+		super.OutputAProduct();
+		System.out.println("Color: " + color);
+		System.out.println("Size: " + size);
+		System.out.println("Material: " + material);
 	}
 
 	public String getColor() {
@@ -46,26 +61,21 @@ public class Interior extends Product {
 		this.color = color;
 	}
 
-
 	public String getSize() {
 		return size;
 	}
-
 
 	public void setSize(String size) {
 		this.size = size;
 	}
 
-
 	public String getMaterial() {
 		return material;
 	}
 
-
 	public void setMaterial(String material) {
 		this.material = material;
 	}
-
 
 	@Override
 	public String toString() {
@@ -76,12 +86,4 @@ public class Interior extends Product {
 				+ ", color=" + color + ", size=" + size 
 				+ ", material=" + material + "]";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 }

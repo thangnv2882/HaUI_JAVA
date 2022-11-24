@@ -14,7 +14,6 @@ public class Student extends Person {
 	public Student() {
 		this(Student.FIRSTNAME, Student.LASTNAME, Student.AGE, Student.ADDRESS
 				, Student.ID, Student.SPECIALY);
-		
 	}
 
 	public Student(String firstName, String lastName, byte age, Address address, int id, String specialy) {
