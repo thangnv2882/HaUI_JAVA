@@ -3,7 +3,7 @@
 //1. DANHSACHLOP
 //2. | STT | HO TEN
 //3. Hiển thị STT (tự động tăng) và họ tên 
-//Cuối. TONGSO = ?(Sinh viên)
+//Cuối: TONGSO = ?(Sinh viên)
 //
 //Random khoảng 70 sinh viên
 //
