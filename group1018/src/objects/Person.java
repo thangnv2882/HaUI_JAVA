@@ -1,6 +1,8 @@
 package objects;
 
-public class Person implements Comparable<Person> {
+import java.io.Serializable;
+
+public class Person implements Comparable<Person>, Serializable {
 
 //	Constants
 	public static final String FIRSTNAME = "No firstName";
@@ -50,7 +52,7 @@ public class Person implements Comparable<Person> {
 
 	@Override
 	public String toString() {
-		return firstName + " " + lastName + " " + age;
+		return String.format("%-12s %-12s %-5d", firstName, firstName, age);
 	}
 
 	public void setAddress(Address address) {

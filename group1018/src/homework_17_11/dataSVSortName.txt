@@ -1,72 +1,72 @@
 | STT        | HO TEN                         | Tuoi       |
-| 8          | Bùi Hồng                       | 20         |
-| 17         | Bùi Hồng                       | 21         |
-| 22         | Bùi Hồng                       | 18         |
-| 35         | Bùi Hồng                       | 22         |
-| 58         | Bùi Hồng                       | 20         |
-| 70         | Bùi Hồng                       | 22         |
-| 4          | Hoàng Anh                      | 20         |
-| 25         | Hoàng Anh                      | 20         |
-| 54         | Hoàng Anh                      | 19         |
-| 7          | Hồ Nam                         | 21         |
-| 12         | Hồ Nam                         | 23         |
-| 27         | Hồ Nam                         | 23         |
-| 38         | Hồ Nam                         | 19         |
-| 61         | Hồ Nam                         | 22         |
-| 39         | Lê Tuấn Anh                    | 22         |
-| 47         | Lê Tuấn Anh                    | 20         |
-| 49         | Lê Tuấn Anh                    | 23         |
-| 51         | Lê Tuấn Anh                    | 22         |
-| 6          | Lương Châu                     | 21         |
-| 11         | Lương Châu                     | 18         |
-| 18         | Lương Châu                     | 20         |
-| 34         | Lương Châu                     | 23         |
-| 53         | Lương Châu                     | 21         |
-| 60         | Lương Châu                     | 19         |
-| 10         | Ma Minh Châu                   | 20         |
-| 26         | Ma Minh Châu                   | 21         |
-| 37         | Ma Minh Châu                   | 21         |
-| 41         | Ma Minh Châu                   | 23         |
-| 64         | Ma Minh Châu                   | 20         |
-| 14         | Nguyễn Anh Tuấn                | 22         |
-| 44         | Nguyễn Anh Tuấn                | 20         |
-| 2          | Ngô Châu Anh                   | 20         |
-| 13         | Ngô Châu Anh                   | 20         |
-| 15         | Ngô Châu Anh                   | 18         |
-| 23         | Ngô Châu Anh                   | 20         |
-| 24         | Ngô Châu Anh                   | 19         |
-| 57         | Ngô Châu Anh                   | 18         |
-| 59         | Ngô Châu Anh                   | 19         |
-| 65         | Ngô Châu Anh                   | 18         |
-| 32         | Phan Minh Anh                  | 21         |
-| 68         | Phan Minh Anh                  | 23         |
-| 69         | Phan Minh Anh                  | 22         |
-| 1          | Phạm Bảo                       | 18         |
-| 16         | Phạm Bảo                       | 22         |
-| 20         | Phạm Bảo                       | 20         |
-| 21         | Quách Việt                     | 19         |
-| 42         | Quách Việt                     | 19         |
-| 62         | Quách Việt                     | 22         |
-| 36         | Trần Linh                      | 19         |
-| 40         | Trần Linh                      | 21         |
-| 66         | Trần Linh                      | 18         |
-| 30         | Vũ Thuỷ                        | 21         |
-| 48         | Vũ Thuỷ                        | 18         |
-| 50         | Vũ Thuỷ                        | 19         |
-| 52         | Vũ Thuỷ                        | 18         |
-| 5          | Vũ Vân                         | 23         |
-| 28         | Vũ Vân                         | 19         |
-| 43         | Vũ Vân                         | 20         |
-| 46         | Vũ Vân                         | 22         |
-| 19         | Đoàn Chiến                     | 23         |
-| 29         | Đoàn Chiến                     | 22         |
-| 45         | Đoàn Chiến                     | 19         |
-| 55         | Đoàn Chiến                     | 23         |
-| 56         | Đoàn Chiến                     | 20         |
-| 63         | Đoàn Chiến                     | 22         |
-| 3          | Đào Hùng                       | 22         |
-| 9          | Đào Hùng                       | 21         |
-| 31         | Đào Hùng                       | 19         |
-| 33         | Đào Hùng                       | 21         |
-| 67         | Đào Hùng                       | 23         |
+| 10         | Bùi Hồng                       | 23         |
+| 13         | Bùi Hồng                       | 22         |
+| 21         | Bùi Hồng                       | 23         |
+| 25         | Bùi Hồng                       | 18         |
+| 51         | Bùi Hồng                       | 23         |
+| 62         | Bùi Hồng                       | 19         |
+| 2          | Hoàng Anh                      | 19         |
+| 41         | Hoàng Anh                      | 22         |
+| 56         | Hoàng Anh                      | 19         |
+| 8          | Hồ Nam                         | 20         |
+| 19         | Hồ Nam                         | 20         |
+| 49         | Hồ Nam                         | 22         |
+| 54         | Hồ Nam                         | 23         |
+| 23         | Lê Tuấn Anh                    | 23         |
+| 28         | Lê Tuấn Anh                    | 22         |
+| 32         | Lê Tuấn Anh                    | 20         |
+| 33         | Lê Tuấn Anh                    | 20         |
+| 36         | Lê Tuấn Anh                    | 20         |
+| 39         | Lê Tuấn Anh                    | 18         |
+| 5          | Lương Châu                     | 21         |
+| 17         | Lương Châu                     | 22         |
+| 26         | Lương Châu                     | 19         |
+| 1          | Ma Minh Châu                   | 23         |
+| 24         | Ma Minh Châu                   | 23         |
+| 31         | Ma Minh Châu                   | 19         |
+| 53         | Ma Minh Châu                   | 19         |
+| 58         | Ma Minh Châu                   | 19         |
+| 11         | Nguyễn Anh Tuấn                | 23         |
+| 18         | Nguyễn Anh Tuấn                | 18         |
+| 35         | Nguyễn Anh Tuấn                | 21         |
+| 46         | Nguyễn Anh Tuấn                | 20         |
+| 50         | Nguyễn Anh Tuấn                | 21         |
+| 67         | Nguyễn Anh Tuấn                | 23         |
+| 3          | Ngô Châu Anh                   | 18         |
+| 30         | Ngô Châu Anh                   | 19         |
+| 43         | Ngô Châu Anh                   | 23         |
+| 9          | Phan Minh Anh                  | 23         |
+| 16         | Phan Minh Anh                  | 21         |
+| 60         | Phan Minh Anh                  | 19         |
+| 63         | Phan Minh Anh                  | 18         |
+| 6          | Phạm Bảo                       | 19         |
+| 7          | Phạm Bảo                       | 20         |
+| 12         | Phạm Bảo                       | 23         |
+| 14         | Phạm Bảo                       | 22         |
+| 52         | Phạm Bảo                       | 18         |
+| 69         | Phạm Bảo                       | 23         |
+| 4          | Quách Việt                     | 18         |
+| 20         | Quách Việt                     | 20         |
+| 29         | Quách Việt                     | 18         |
+| 37         | Quách Việt                     | 21         |
+| 47         | Quách Việt                     | 18         |
+| 48         | Quách Việt                     | 20         |
+| 27         | Trần Linh                      | 23         |
+| 42         | Trần Linh                      | 19         |
+| 15         | Vũ Thuỷ                        | 19         |
+| 34         | Vũ Thuỷ                        | 23         |
+| 44         | Vũ Thuỷ                        | 22         |
+| 55         | Vũ Thuỷ                        | 19         |
+| 57         | Vũ Vân                         | 21         |
+| 61         | Vũ Vân                         | 20         |
+| 65         | Vũ Vân                         | 18         |
+| 70         | Vũ Vân                         | 22         |
+| 22         | Đoàn Chiến                     | 19         |
+| 40         | Đoàn Chiến                     | 19         |
+| 45         | Đoàn Chiến                     | 20         |
+| 59         | Đoàn Chiến                     | 21         |
+| 64         | Đoàn Chiến                     | 22         |
+| 38         | Đào Hùng                       | 23         |
+| 66         | Đào Hùng                       | 20         |
+| 68         | Đào Hùng                       | 22         |
 TONGSO: 70 (Sinh viên)
